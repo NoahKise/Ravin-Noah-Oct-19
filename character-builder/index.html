@@ -13,7 +13,6 @@
   <form id="characterName">
     <label for="name">Give your character a name</label>
     <input id="name" type="text" name="name">
-    <!-- <button type="submit">Submit</button> -->
   </form>
   <form id="characterType">
     <label for="characterType">Choose a character type</label>
@@ -22,7 +21,6 @@
       <option value="dwarf">Dwarf</option>
       <option value="mermaid">Mermaid</option>
     </select>
-    <!-- <input type="submit"> -->
   </form>
   <form id="abilities">
     <p>Choose an ability</p>
@@ -32,9 +30,20 @@
     <label for="mindReading">Mind Reading</label><br>
     <input type="radio" id="abilities" name="abilities" value="flight">
     <label for="flight">Flight</label><br>
+
+    <!-- THIS COMMENTED OUT CODE IS FOR A DROPDOWN MENU -->
+    <!-- <label for="abilities">Choose an Ability</label>
+    <select id="abilities" name="abilities">
+      <option value="superStrength">Super Strength</option>
+      <option value="mindReading">Mind Reading</option>
+      <option value="flight">Flight</option>
+    </select> -->
     <button type="submit" value="Submit">Submit</button>
   </form>
-
+  <h2>RESULTS</h2>
+  <div id="nameResult">
+    <p><span id="resultName">_________</span></p>
+  </div>
   <div id="strongWizard" class="hidden">
     <h2>Strong Wizard</h2>
   </div>

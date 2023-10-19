@@ -1,17 +1,25 @@
-// //window.addEventListener("load", function () {
-//   let nameForm = document.getElementById("characterName");
-//   nameForm.addEventListener("submit", function (event) {
-//     const inputName = document.querySelector("name").value;
-//     event.preventDefault();
-//   });
-// });
-window.onload = function() {
+function hideResults() {
+  document.getElementById("strongWizard").setAttribute("class", "hidden");
+  document.getElementById("mindReadingWizard").setAttribute("class", "hidden");
+  document.getElementById("flightWizard").setAttribute("class", "hidden");
+  document.getElementById("strongDwarf").setAttribute("class", "hidden");
+  document.getElementById("mindReadingDwarf").setAttribute("class", "hidden");
+  document.getElementById("flightDwarf").setAttribute("class", "hidden");
+  document.getElementById("strongMermaid").setAttribute("class", "hidden");
+  document.getElementById("mindReadingMermaid").setAttribute("class", "hidden");
+  document.getElementById("flightMermaid").setAttribute("class", "hidden");
+}
 
+window.onload = function() {
   let form = document.querySelector("form#abilities");
   form.addEventListener("submit", function(event) {
     event.preventDefault();
-    let characterType = document.querySelector("select#characterType").value;
-    let characterAbility = document.querySelector("input#abilities").value;
+    hideResults();
+    const characterName = document.getElementById("name").value;
+    const characterType = document.querySelector("select#characterType").value;
+    const characterAbility = document.querySelector("input#abilities:checked").value;
+    document.querySelector("span#resultName").innerText = characterName;
+
 
     if (characterType === "wizard" && characterAbility === "superStrength") {
       strongWizard.removeAttribute("class");
@@ -24,7 +32,7 @@ window.onload = function() {
     } else if (characterType === "dwarf" && characterAbility === "mindReading") {
       mindReadingDwarf.removeAttribute("class");
     } else if (characterType === "dwarf" && characterAbility === "flight") {
-      flightdwarf.removeAttribute("class");
+      flightDwarf.removeAttribute("class");
     } else if (characterType === "mermaid" && characterAbility === "superStrength") {
       strongMermaid.removeAttribute("class");
     } else if (characterType === "mermaid" && characterAbility === "mindReading") {
