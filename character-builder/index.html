@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>Character Builder</title>
+</head>
+
+<body>
+  <h1>Choose Your Character</h1>
+  <form id="characterName">
+    <label for="name">Give your character a name</label>
+    <input id="name" type="text" name="name">
+    <button type="submit">Submit</button>
+  </form>
+  <form id="characterType">
+    <label for="characterType">Choose a character type</label>
+    <select id="characterType" name="characterType">
+      <option value="wizard">Wizard</option>
+      <option value="dwarf">Dwarf</option>
+      <option value="mermaid">Mermaid</option>
+    </select>
+    <input type="submit">
+  </form>
+  <form id="abilities">
+    <p>Choose an ability</p>
+    <input type="radio" id="superStrength" name="abilities" value="superStrength" checked>
+    <label for="superStrength">Super Strength</label><br>
+    <input type="radio" id="mindReading" name="abilities" value="mindReading">
+    <label for="mindReading">Mind Reading</label><br>
+    <input type="radio" id="flight" name="abilities" value="flight">
+    <label for="flight">Flight</label><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <div id="strongWizard" class="hidden">
+    <h2>Strong Wizard</h2>
+  </div>
+  <div id="mindReadingWizard" class="hidden">
+    <h2>Mind Reading Wizard</h2>
+  </div>
+  <div id="flightWizard" class="hidden">
+    <h2>Flying Wizard</h2>
+  </div>
+  <div id="strongDwarf" class="hidden">
+    <h2>Strong Dwarf</h2>
+  </div>
+  <div id="mindReadingDwarf" class="hidden">
+    <h2>Mind Reading Dwarf</h2>
+  </div>
+  <div id="flightDwarf" class="hidden">
+    <h2>Flying Dwarf</h2>
+  </div>
+  <div id="strongMermaid" class="hidden">
+    <h2>Strong Mermaid</h2>
+  </div>
+  <div id="mindReadingMermaid" class="hidden">
+    <h2>Mind Reading Mermaid</h2>
+  </div>
+  <div id="flightMermaid" class="hidden">
+    <h2>Flying Mermaid</h2>
+  </div>
+
+
+</body>
+
+</html>
