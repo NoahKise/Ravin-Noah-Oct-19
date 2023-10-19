@@ -1,28 +1,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/scripts.js"></script>
-    <title>Triangle Tracker</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+  <title>Triangle Tracker</title>
 </head>
 
 <body>
-    <h2>Let's make a Triangle!</h2>
-    <form id="sideA">
-        <label for="sideA">Side One Length</label>
-        <input id="sideA" type="number" name="sideA">
-    </form>
-    <form id="sideB">
-        <label for="sideB">Side Two Length</label>
-        <input id="sideB" type="number" name="sideB">
-    </form>
-    <form id="sideC">
-        <label for="sideC">Side Three Length</label>
-        <input id="sideC" type="number" name="sideC"><br>
-        <button id="submit" type="submit">What kind of triangle am I?</button>
-    </form>
+  <h2>Let's make a Triangle!</h2>
+  <form id="sideA">
+    <label for="sideA">Side One Length</label>
+    <input id="sideA" type="number" name="sideA">
+  </form>
+  <form id="sideB">
+    <label for="sideB">Side Two Length</label>
+    <input id="sideB" type="number" name="sideB">
+  </form>
+  <form id="sideC">
+    <label for="sideC">Side Three Length</label>
+    <input id="sideC" type="number" name="sideC"><br>
+    <button id="submit" type="submit">What kind of triangle am I?</button>
+  </form>
+  <div id="equilateral" class="hidden">
+    <h1>It's an Equilateral!</h1>
+  </div>
+  <div id="isosceles" class="hidden">
+    <h1>It's an Isosceles!</h1>
+  </div>
+  <div id="scalene" class="hidden">
+    <h1>It's a Scalene!</h1>
+  </div>
+  <div id="notATriangle" class="hidden">
+    <h1>It's not a triangle!</h1>
+  </div>
+  <h2>RESULT<h2>
 </body>
 
 </html>
